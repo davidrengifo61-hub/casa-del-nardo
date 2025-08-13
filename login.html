@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - La Casa del Nardo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">La Casa del Nardo</h1>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="ramos.html">Ramos</a>
+        <a href="detalles.html">Detalles</a>
+        <a href="navidad.html">Navidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container login-section">
+    <h2>Iniciar Sesión</h2>
+    <form class="login-form" onsubmit="return false;">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" onclick="alert('Inicio de sesión simulado')">Entrar</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 La Casa del Nardo. Todos los derechos reservados.</p>
+      <div class="socials">
+        <a href="https://wa.me/573001112233" target="_blank">WhatsApp</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles - La Casa del Nardo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌸 La Casa del Nardo 🌸</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="ramos.html">Ramos</a>
+            <a href="detalles.html">Detalles</a>
+            <a href="navidad.html">Navidad</a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Detalles</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="img/detalle1.jpg" alt="Caja de Chocolates">
+                <h3>Caja de Chocolates</h3>
+                <p>Deliciosos chocolates artesanales.</p>
+                <p class="precio">50</p>
+                <button onclick="agregarAlCarrito('Caja de Chocolates', 50)">Agregar al carrito 🛒</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/detalle2.jpg" alt="Globo con Mensaje">
+                <h3>Globo con Mensaje</h3>
+                <p>Globo decorativo con mensaje personalizado.</p>
+                <p class="precio">20</p>
+                <button onclick="agregarAlCarrito('Globo con Mensaje', 20)">Agregar al carrito 🛒</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/detalle3.jpg" alt="Tarjeta Especial">
+                <h3>Tarjeta Especial</h3>
+                <p>Tarjeta personalizada para cualquier ocasión.</p>
+                <p class="precio">10</p>
+                <button onclick="agregarAlCarrito('Tarjeta Especial', 10)">Agregar al carrito 🛒</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>📍 Calle 21#21b07, Ciudad Pasto Nariño</p>
+        <p>📞 Tel: 300 000 0000</p>
+        <div class="redes">
+            <a href="https://wa.me/573172211077" target="_blank">WhatsApp</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
