@@ -124,3 +124,20 @@ footer {
 .redes a:hover {
     text-decoration: underline;
 }
+
+#finalizar-compra {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#finalizar-compra:hover {
+    background-color: #218838;
+}
+
