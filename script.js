@@ -57,8 +57,8 @@ document.getElementById('finalizar-compra').addEventListener('click', function (
   // Usamos la variable total directamente, no el textContent
   let mensaje = `Hola, quiero finalizar mi compra. El total es: $${total.toLocaleString("es-CO")}`;
 
-  let telefono = "573001112233"; // Cambia por tu número
-  let url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+  let telefono = "573172211077"; // Cambia por tu número
+  let url = `https://wa.me/${3172211077}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, '_blank');
 });
 
