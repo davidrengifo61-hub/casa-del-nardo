@@ -71,10 +71,10 @@ document.getElementById('finalizar-compra').addEventListener('click', function (
   mensaje += `\nTotal: $${total.toLocaleString("es-CO")}`;
 
   // Número de WhatsApp con formato internacional (sin +)
-  let telefono = "573001112233"; // Cambia por tu número
+  let telefono = "573172211077"; // Cambia por tu número
 
   // Crear URL y abrir WhatsApp
-  let url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+  let url = `https://wa.me/${3172211077}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, '_blank');
 
   // Opcional: vaciar carrito después de finalizar
