@@ -54,12 +54,33 @@ totalElem.textContent = total.toLocaleString("es-CO", {
 });
 
 document.getElementById('finalizar-compra').addEventListener('click', function () {
-  // Usamos la variable total directamente, no el textContent
-  let mensaje = `Hola, quiero finalizar mi compra. El total es: $${total.toLocaleString("es-CO")}`;
+  if (carrito.length === 0) {
+    alert("Tu carrito está vacío.");
+    return;
+  }
 
-  let telefono = "573172211077"; // Cambia por tu número
-  let url = `https://wa.me/${3172211077}?text=${encodeURIComponent(mensaje)}`;
+  // Crear mensaje con detalle de productos
+  let mensaje = "Hola, quiero finalizar mi compra. Estos son los productos:\n\n";
+
+  carrito.forEach((item) => {
+    mensaje += `- ${item.nombre}: $${item.precio.toLocaleString("es-CO")}\n`;
+  });
+
+  // Calcular total
+  let total = carrito.reduce((acc, item) => acc + item.precio, 0);
+  mensaje += `\nTotal: $${total.toLocaleString("es-CO")}`;
+
+  // Número de WhatsApp con formato internacional (sin +)
+  let telefono = "573001112233"; // Cambia por tu número
+
+  // Crear URL y abrir WhatsApp
+  let url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, '_blank');
+
+  // Opcional: vaciar carrito después de finalizar
+  carrito = [];
+  localStorage.removeItem("carrito");
+  mostrarCarrito(); // vuelve a renderizar el carrito vacío
 });
 
    
