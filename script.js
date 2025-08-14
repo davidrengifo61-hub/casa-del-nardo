@@ -44,7 +44,23 @@ function mostrarCarrito() {
             <button onclick="eliminarDelCarrito(${index})">❌</button>
         `;
         contenedor.appendChild(item);
+          
+        
     });
+    
+totalElem.textContent = total.toLocaleString("es-CO", {
+    style: "currency",
+    currency: "COP"
+});
+
+document.getElementById('finalizar-compra').addEventListener('click', function () {
+  // Usamos la variable total directamente, no el textContent
+  let mensaje = `Hola, quiero finalizar mi compra. El total es: $${total.toLocaleString("es-CO")}`;
+
+  let telefono = "573001112233"; // Cambia por tu número
+  let url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, '_blank');
+});
 
    
 }
@@ -65,3 +81,4 @@ function vaciarCarrito() {
 
 // Ejecutar en carrito.html
 document.addEventListener("DOMContentLoaded", mostrarCarrito);
+
