@@ -40,6 +40,15 @@ h2 {
     color: #3b7a57;
 }
 
+.seccion-navidad {
+  background-image: url('./img/fondonavidad.jpg'); /* Ajusta la ruta según tu estructura */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
 .seccion-ramos {
   background-image: url('img/fondoramos.jpg');
   background-size: cover;
