@@ -42,19 +42,20 @@ h2 {
 
 .seccion-navidad {
   background-image: url('./img/fondonavidad.jpg'); /* Ajusta la ruta según tu estructura */
-  background-size: cover;
+  background-size: auto
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat:repeat
   padding: 50px 0;
   min-height: 100vh;
 }
 
 .seccion-ramos {
   background-image: url('img/fondoramos.jpg');
-  background-size: cover;
+  background-size: auto;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   padding: 50px 0;
+  min-height: 100vh;
 }
 
 /* ====== Productos ====== */
